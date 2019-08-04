@@ -4,7 +4,7 @@ from datetime import date
 
 
 a=date.today()
-a=a.day()
+a=a.day
 
 
 import pandas
