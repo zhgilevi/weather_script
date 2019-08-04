@@ -10,7 +10,7 @@ a=a.day
 import pandas
 
 def get_weather():
-    table=pandas.read_html("https://yandex.ru/pogoda/khanty-mansiysk/details#"+str(day) , header=0,parse_dates=['Unnamed: 0'])
+    table=pandas.read_html("https://yandex.ru/pogoda/khanty-mansiysk/details#"+str(a) , header=0,parse_dates=['Unnamed: 0'])
 
     answer=[table[0].values[0][0],table[0].values[1][0],table[0].values[2][0],table[0].values[3][0]]
     return answer
